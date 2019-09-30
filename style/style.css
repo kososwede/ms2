@@ -45,11 +45,15 @@ body {
 .football {
 height: 60px;
     width: 60px;
+    transform: scale(.9);
+    transition: transform 100ms ease-in-out;
 }
 
 .team {
     height: 100px;
     width: 90px;
+    transform: scale(.9);
+    transition: transform 200ms ease-in-out;
 }
 
 .card-back:hover .football {
@@ -78,7 +82,16 @@ height: 60px;
 }
 
 .card-front {
+    background-color: green;
+    border-color: black;
     transform: rotateY(180deg);
+}
+
+.card-back:hover .football {
+    transform: scale(1);
+}
+.card-front:hover .team {
+    transform: scale(1);
 }
 
 .card-back {
