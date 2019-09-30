@@ -33,6 +33,7 @@ body {
     grid-gap: 10px;
     margin: 50px;
     justify-content: center;
+    perspective: 500px;
 }
 
 .card {
@@ -71,6 +72,7 @@ height: 60px;
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
+    transition: transform 500ms ease-in-out;
 }
 
 .card.visible .card-back {
@@ -95,6 +97,6 @@ height: 60px;
 }
 
 .card-back {
-    background-color: aquamarine;
+    background-color: red;
     border-color: black;
 }
