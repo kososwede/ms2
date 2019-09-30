@@ -83,10 +83,13 @@ height: 60px;
     transform: rotateY(0)
 }
 
-.card:hover .team {
+.card.matched .team {
     animation: dance 1s linear infinite 500ms;
 }
 
+.overlay-text-small {
+    font-size: .3em;
+}
 @keyframes dance {
     0%, 100% {
         transform: rotate(0);
@@ -115,4 +118,36 @@ height: 60px;
 .card-back {
     background-color: red;
     border-color: black;
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: yellow;
+    font-family: 'Cute Font', cursive;
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from{
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to{
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 10em;
+    }
 }
