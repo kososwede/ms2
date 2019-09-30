@@ -9,4 +9,14 @@
 body {
     margin: 0;
     background-image: url(../images/background-pitch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.game-info {
+    color: yellow;
+    font-size: 4em;
+    font-family: 'Cute Font',
+    cursive;
 }
