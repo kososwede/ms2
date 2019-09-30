@@ -83,6 +83,22 @@ height: 60px;
     transform: rotateY(0)
 }
 
+.card:hover .team {
+    animation: dance 1s linear infinite 500ms;
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    }
+
 .card-front {
     background-color: green;
     border-color: black;
