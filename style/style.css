@@ -14,9 +14,26 @@ body {
     background-position: bottom;
 }
 
+.game-info-container {
+    grid-column: 1 / -1;
+}
+
 .game-info {
     color: yellow;
     font-size: 4em;
     font-family: 'Cute Font',
     cursive;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+grid-gap: 10px;
+}
+
+.card {
+    background-color: green;
+      height: 150px;
+    width: 100px;
+
 }
