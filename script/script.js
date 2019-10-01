@@ -32,7 +32,11 @@ class MixnMatch {
         this.busy = true;
     }
     flipCard(card) {
-
+        if(this.canFlipCard(card)) {
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
+        }
     }
 
     canFlipCard(card) {
