@@ -65,7 +65,7 @@ this.ticker.innerText = this.totalClicks;
         else
         this.cardNotMatched(card, this.cardToCheck);
 
-        this.cardToCheck = null;
+       this.cardToCheck = null;
     }
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
@@ -76,7 +76,7 @@ this.ticker.innerText = this.totalClicks;
         if(this.matchedCards.length === this.cardsArray)
         this.victory();
     }
-    cardNotMatched(card) {
+    cardNotMatched(card1, card2) {
         this.busy = true;
         setTimeout(() => {
             card1.classList.remove('visible');
