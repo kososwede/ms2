@@ -155,6 +155,7 @@ height: 60px;
         font-size: 10em;
     }
 }
+/*----------media queries-------------*/
 
 @media (max-width: 768px) {
 .football {
@@ -164,6 +165,9 @@ height: 60px;
 .team {
     height: 95px;
     width: 85px;
+    }
+    .game-info {
+        font-size: 3em;
     }
 }
 
@@ -180,6 +184,9 @@ height: 60px;
     height: 75px;
     width: 55px;
     }
+    .game-info {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -195,6 +202,9 @@ height: 60px;
     height: 65px;
     width: 45px;
     }
+    .game-info {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 320px) {
@@ -209,5 +219,8 @@ height: 60px;
 .team {
     height: 55px;
     width: 35px;
+    }
+    .game-info {
+        font-size: 0.5em;
     }
 }
