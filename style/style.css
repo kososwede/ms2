@@ -10,8 +10,8 @@ body {
     margin: 0;
     background-image: url(../images/background-pitch.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-size: 100vh;
+    background-position: center;
 }
 
 .game-info-container {
