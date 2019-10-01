@@ -137,6 +137,7 @@ height: 60px;
     z-index: 100;
     color: yellow;
     font-family: 'Cute Font', cursive;
+    font-size: 4em;
 }
 
 .overlay-text.visible {
