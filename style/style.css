@@ -138,10 +138,11 @@ height: 60px;
     font-family: 'Cute Font', cursive;
     font-size: 4em;
 }
-
+.overlay-text-small {
+    font-size: 2em;
+}
 .overlay-text.visible {
     display: flex;
-    flex-direction: column;
     animation: overlay-grow 500ms forwards;
 }
 
