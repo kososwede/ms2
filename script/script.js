@@ -4,7 +4,15 @@ class AudioController {
         this.victorySound = new Audio('sounds/victory.wav');
         this.gameOverSound = new Audio('sounds/gameover.wav');
      }
-
+match() {
+    this.matchSound.play();
+}
+victory() {
+    this.victorySound.play();
+}
+gameOver() {
+    this.gameOverSound.play();
+    }
 }
 
 
