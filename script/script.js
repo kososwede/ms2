@@ -73,7 +73,7 @@ this.ticker.innerText = this.totalClicks;
         card1.classList.add('matched');
         card2.classList.add('matched');
         this.audioController.match();
-        if(this.matchedCards.length === this.cardsArray)
+        if(this.matchedCards.length === this.cardsArray.length)
         this.victory();
     }
     cardNotMatched(card1, card2) {
