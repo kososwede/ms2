@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="script/script.js" async></script>
+     <link rel="stylesheet" href="style/style.css">
+
+    <title>MIX 'n' MATCH</title>
+</head>
+<body>
+<div class="button">
+ <a href="index.html">
+  BACK TO START
+  </a>
+</div>
+<div class="overlay-text visible">
+CLICK TO START
+</div>
+<div id="game-over-text" class="overlay-text">
+GAME OVER
+<span class="overlay-text-small">Click to Restart</span>
+</div>
+<div id="victory-text" class="overlay-text">
+VICTORY
+<span class="overlay-text-small">Click to Restart</span>
+</div>
+
+    <div class="game-container">
+    <div class="game-info-container">
+    <div class="game-info">
+    TIME <span id = "time-remaining">60</span>
+    </div>
+     <div class="game-info">
+    FLIPS <span id = "flips">0</span>
+    </div>
+    </div>
+<div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-dino.png">
+    </div>
+    </div>
+   <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-dino.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-pteradon.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-pteradon.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/olive-triceratops.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/olive-triceratops.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/purple-triceratops.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/purple-triceratops.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/raptor.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/raptor.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/red-diplodocus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/red-diplodocus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/spinosaurus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/spinosaurus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/stegosaurus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/stegosaurus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-brontosaurus.png">
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-back card-face">
+    <img class="football" src="images/trex-back.png">
+    </div>
+    <div class="card-front card-face">
+    <img class="team" src="images/green-brontosaurus.png">
+    </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
