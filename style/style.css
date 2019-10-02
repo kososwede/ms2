@@ -96,7 +96,15 @@ text-shadow: #000 0px 0px 3px,
 
 }
 
-/*--------------footbal----------*/
+/*--------------football dino animal----------*/
+.dino-background {
+    margin: 0;
+    background-image: url(../images/dino-game-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 body {
     margin: 0;
     background-image: url(../images/background-pitch.jpg);
