@@ -1,3 +1,6 @@
+
+
+
 class AudioController {
     constructor() {
         this.matchSound = new Audio('sounds/applause5.mp3');
@@ -146,3 +149,9 @@ if (document.readyState == 'loading') {
 
 let audioController = new AudioController();
 
+function footySound() {
+  var footyWhistle = new Audio();
+  footyWhistle.src = "sounds/whistle.mp3";
+  document.getElementById(footyWhistle);
+  footyWhistle.Play();
+}

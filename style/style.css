@@ -11,6 +11,92 @@ html {
     box-sizing: border-box;
 }
 
+/*--------------landing page---------*/
+
+.background-home {
+background-image: none;
+   background:linear-gradient(green, pink);
+   background-size: 500px;
+   background-position-x: 20%;
+   background-position-y: 90%;
+   }
+
+   .btn-lg {
+background-color: black;
+}
+
+.brain-pic-1 {
+    padding-top: 50px;
+    height: 300px;
+    width: 350px;
+
+}
+
+.heading {
+    font-family: Fantasy, sans-serif;
+font-size: 5em;
+text-align: center;
+padding-top: 50px;
+color:rgb(26, 245, 190);
+text-shadow: #000 0px 0px 3px,
+#000 0px 0px 3px,
+#000 0px 0px 3px,
+#000 0px 0px 3px,
+#000 0px 0px 3px,
+#000 0px 0px 3px;
+}
+
+.sub-heading {
+    animation: forwards;
+    transition-delay: 500ms;
+    transition-duration: 500ms;
+    font-family: 'Mansalva',
+    cursive;
+    color: ghostwhite;
+    text-shadow: #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px;
+}
+
+.subject-header {
+    color:black;
+}
+.container {
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+}
+
+.masthead {
+    min-height: 20rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subject-buttons {
+    display: flex;
+    float: right;
+    padding-right: 90px;
+    padding-top: 20px;
+
+
+}
+
+/*--------------footbal----------*/
 body {
     margin: 0;
     background-image: url(../images/background-pitch.jpg);
@@ -155,6 +241,18 @@ height: 60px;
         font-size: 7em;
     }
 }
+
+.button {
+  background-color: #4CAF50;
+color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
 /*----------media queries-------------*/
 
 @media (max-width: 768px) {
@@ -168,6 +266,12 @@ height: 60px;
     }
     .game-info {
         font-size: 4em;
+    }
+    .background-home {
+        background-size: 400px;
+    }
+    .subject-buttons {
+        size:160px;
     }
 
 }
@@ -188,6 +292,12 @@ height: 60px;
     .game-info {
         font-size: 3em;
     }
+    .background-home {
+        background-size: 300px;
+    }
+    .subject-buttons {
+        size:140px;
+    }
 
 }
 
@@ -206,6 +316,12 @@ height: 60px;
     }
     .game-info {
         font-size: 1.5em;
+    }
+    .background-home {
+        background-size: 200px;
+    }
+    .subject-buttons {
+        size:120px;
     }
 
 }
@@ -227,5 +343,7 @@ height: 60px;
     .game-info {
         font-size: 0.5em;
     }
-
+.background-home {
+        background-size: 100px;
+    }
 }

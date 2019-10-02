@@ -4,179 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="script/script.js" async></script>
-     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>MIX 'n' MATCH</title>
+    <script src="script/script.js" async></script>
+    <title>Document</title>
 </head>
-<body>
-<div class="overlay-text visible">
-CLICK TO START
-</div>
-<div id="game-over-text" class="overlay-text">
-GAME OVER
-<span class="overlay-text-small">Click to Restart</span>
-</div>
-<div id="victory-text" class="overlay-text">
-VICTORY
-<span class="overlay-text-small">Click to Restart</span>
-</div>
+    <body class="background-home">
 
-    <div class="game-container">
-    <div class="game-info-container">
-    <div class="game-info">
-    TIME <span id = "time-remaining">60</span>
-    </div>
-     <div class="game-info">
-    FLIPS <span id = "flips">0</span>
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/arsenal.png">
-    </div>
-    </div>
-   <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/arsenal.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/chelsea.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/chelsea.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/everton.jpg">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/everton.jpg">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/leicester.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/leicester.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/liverpool.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/liverpool.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/man-united.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/man-united.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/newcastle-united.jpg">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/newcastle-united.jpg">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/west-ham-united.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/west-ham-united.png">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/wolves.gif">
-    </div>
-    </div>
-    <div class="card">
-    <div class="card-back card-face">
-    <img class="football" src="images/football.png">
-    </div>
-    <div class="card-front card-face">
-    <img class="team" src="images/wolves.gif">
-    </div>
-    </div>
-    </div>
+    <header class="masthead d-flex">
+    <div class="container text-center my-auto ">
+      <h1 class="heading mb-1 ">MIX 'n' MATCH</h1>
+      <h3 class="sub-heading mb-5">
+        TRAIN YOUR BRAIN
+      </h3>
 </div>
+</header>
+<h3 class="text-center subject-header">CHOOSE YOUR CATEGORY</h3>
+ <div class="text-center buttons">
+   <a href="footy.html">
+     <audio id="footyWhistle" src="sounds/whistle.mp3"></audio>
+  <button onclick="footySound()" type="button"  id="footy" class="btn-lg btn-outline-success">FOOTBALL</button>
+  </a>
+  <a href="dino.html" target="_blank">
+    <audio id="dinoRoar" src="sounds/t-rex-roar.wav"></audio>
+  <button onclick="dinoSound()" type="button" class="btn-lg btn-outline-danger" id="dino">DINOSAURS</button>
+  </a>
+  <a href="animal.html" target="_blank">
+  <button type="button" class="btn-lg btn-outline-warning animal">ANIMALS</button>
+</a>
+</div>
+<div class="text-center">
+  <img class="brain-pic-1 img-fluid" src="images/brain.png" alt="brain">
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
