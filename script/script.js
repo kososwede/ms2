@@ -1,8 +1,8 @@
 class AudioController {
     constructor() {
-        this.matchSound = new Audio('sounds/applause5.wav');
-        this.victorySound = new Audio('sounds/victory.wav');
-        this.gameOverSound = new Audio('sounds/gameover.wav');
+        this.matchSound = new Audio('sounds/applause5.mp3');
+        this.victorySound = new Audio('sounds/crowdhomerunapplause.mp3');
+        this.gameOverSound = new Audio('sounds/crowd-groan.mp3');
      }
 match() {
     this.matchSound.play();
@@ -38,7 +38,7 @@ class MixnMatch {
 this.hideCards();
 this.timer.innerText = this.timeRemaining;
 this.ticker.innerText = this.totalClicks;
-        //this.shuffleCards();
+
     }
     hideCards() {
         this.cardsArray.forEach(card => {

@@ -134,10 +134,10 @@ height: 60px;
     bottom: 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 100;
     color: yellow;
     font-family: 'Cute Font', cursive;
-    font-size: 2em;
 }
 
 .overlay-text.visible {
@@ -152,7 +152,7 @@ height: 60px;
     }
     to{
         background-color: rgba(0, 0, 0, .8);
-        font-size: 10em;
+        font-size: 7em;
     }
 }
 /*----------media queries-------------*/
@@ -167,8 +167,9 @@ height: 60px;
     width: 85px;
     }
     .game-info {
-        font-size: 3em;
+        font-size: 4em;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -185,8 +186,9 @@ height: 60px;
     width: 55px;
     }
     .game-info {
-        font-size: 2em;
+        font-size: 3em;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -203,9 +205,11 @@ height: 60px;
     width: 45px;
     }
     .game-info {
-        font-size: 1em;
+        font-size: 1.5em;
     }
+
 }
+
 
 @media (max-width: 320px) {
     .card  {
@@ -223,4 +227,5 @@ height: 60px;
     .game-info {
         font-size: 0.5em;
     }
+
 }
