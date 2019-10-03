@@ -172,6 +172,7 @@ height: 60px;
     border-width: 1px;
     border-style: solid;
     transition: transform 500ms ease-in-out;
+    overflow: hidden;
 }
 
 .card.visible .card-back {
