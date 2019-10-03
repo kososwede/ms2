@@ -47,8 +47,11 @@ text-shadow: #000 0px 0px 3px,
 }
 
 .sub-heading {
+-webkit-animation: forwards;
     animation: forwards;
+-webkit-transition-delay: 500ms;
     transition-delay: 500ms;
+-webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     font-family: 'Mansalva',
     cursive;
@@ -115,7 +118,9 @@ body {
 
 .game-info-container {
     grid-column: 1 / -1;
+    display: -webkit-box;
     display: flex;
+-webkit-box-pack: justify;
     justify-content: space-between;
 }
 
@@ -132,7 +137,9 @@ body {
     grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     margin: 50px;
+-webkit-box-pack: center;
     justify-content: center;
+-webkit-perspective: 500px;
     perspective: 500px;
 }
 
@@ -147,18 +154,28 @@ body {
 .football {
 height: 60px;
     width: 60px;
+-webkit-transform: scale(.9);
     transform: scale(.9);
+-webkit-transition: -webkit-transform 100ms ease-in-out;
+    transition: -webkit-transform 100ms ease-in-out;
     transition: transform 100ms ease-in-out;
+    transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
 }
+
 
 .team {
     height: 100px;
     width: 90px;
+    -webkit-transform: scale(.9);
     transform: scale(.9);
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
     transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 
 .card-back:hover .football {
+-webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
@@ -166,55 +183,85 @@ height: 60px;
     position: absolute;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
     display: flex;
+-webkit-box-pack: center;
     justify-content: center;
+-webkit-box-align: center;
     align-items: center;
-    -webkit-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
     overflow: hidden;
 }
 
 .card.visible .card-back {
+-webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
+-webkit-transform: rotateY(0);
     transform: rotateY(0)
 }
 
 .card.matched .team {
+-webkit-animation: dance 1s linear infinite 500ms;
     animation: dance 1s linear infinite 500ms;
 }
 
 .overlay-text-small {
     font-size: .3em;
 }
-@keyframes dance {
+@-webkit-keyframes dance {
     0%, 100% {
+    -webkit-transform: rotate(0);
         transform: rotate(0);
     }
     25% {
+    -webkit-transform: rotate(-30deg);
         transform: rotate(-30deg);
     }
     75% {
+    -webkit-transform: rotate(30deg);
         transform: rotate(30deg);
     }
     }
+    @keyframes dance {
+    0%, 100% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    25% {
+        -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+    }
+    75% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+    }
+
 
 .card-front {
     background-color: green;
     border-color: black;
+-webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .card-back:hover .football {
+-webkit-transform: scale(1);
     transform: scale(1);
 }
 .card-front:hover .team {
+-webkit-transform: scale(1);
     transform: scale(1);
 }
 
@@ -230,8 +277,12 @@ height: 60px;
     left: 0;
     right: 0;
     bottom: 0;
+ -webkit-box-pack: center;
     justify-content: center;
+-webkit-box-align: center;
     align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
     flex-direction: column;
     z-index: 100;
     color: yellow;
@@ -239,8 +290,21 @@ height: 60px;
 }
 
 .overlay-text.visible {
+display: -webkit-box;
     display: flex;
+-webkit-animation: overlay-grow 500ms forwards;
     animation: overlay-grow 500ms forwards;
+}
+
+@-webkit-keyframes overlay-grow {
+    from{
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to{
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 7em;
+    }
 }
 
 @keyframes overlay-grow {
