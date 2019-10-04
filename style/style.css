@@ -108,6 +108,14 @@ text-shadow: #000 0px 0px 3px,
     background-position: bottom;
 }
 
+.animal-background {
+     margin: 0;
+    background-image: url(../images/cat-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 body {
     margin: 0;
     background-image: url(../images/background-pitch.jpg);
