@@ -1,3 +1,5 @@
+
+/*--------------fonts---------*/
 @import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
@@ -90,14 +92,7 @@ text-shadow: #000 0px 0px 3px,
     background-size: cover;
 }
 
-.subject-buttons {
-    display: flex;
-    float: right;
-    padding-right: 90px;
-    padding-top: 20px;
 
-
-}
 
 /*--------------football dino animal----------*/
 .dino-background {
@@ -137,6 +132,12 @@ body {
     font-size: 4em;
     font-family: 'Cute Font',
     cursive;
+     text-shadow: #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px,
+    #000 0px 0px 3px;
 }
 
 
@@ -256,7 +257,7 @@ height: 60px;
     }
     }
 
-
+/*-----------cards---------*/
 .card-front {
     background-color: green;
     border-color: black;
@@ -277,6 +278,8 @@ height: 60px;
     background-color: red;
     border-color: black;
 }
+
+/*---------------overlays-----------*/
 
 .overlay-text {
     display: none;
@@ -354,10 +357,6 @@ color: white;
     .background-home {
         background-size: 400px;
     }
-    .subject-buttons {
-        size:160px;
-    }
-
 }
 
 @media (max-width: 600px) {
@@ -379,10 +378,6 @@ color: white;
     .background-home {
         background-size: 300px;
     }
-    .subject-buttons {
-        size:140px;
-    }
-
 }
 
 @media (max-width: 480px) {
@@ -404,10 +399,6 @@ color: white;
     .background-home {
         background-size: 200px;
     }
-    .subject-buttons {
-        size:120px;
-    }
-
 }
 
 

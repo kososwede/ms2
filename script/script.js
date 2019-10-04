@@ -1,5 +1,5 @@
 
-
+/*----------------sounds----------*/
 
 class AudioController {
     constructor() {
@@ -18,6 +18,7 @@ gameOver() {
     }
 }
 
+
 class MixnMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -27,6 +28,8 @@ class MixnMatch {
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
+
+    /*------------game start-------*/
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -61,7 +64,7 @@ this.ticker.innerText = this.totalClicks;
             this.cardToCheck = card;
         }
     }
-
+/*---------------check for matched cards----------*/
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
         this.cardMatch(card, this.cardToCheck);
@@ -91,6 +94,8 @@ this.ticker.innerText = this.totalClicks;
 getCardType(card) {
     return card.getElementsByClassName('team')[0].src;
 }
+
+/*-----countdown timer--------*/
     startCountdown() {
         return setInterval(() => {
 this.timeRemaining--;
@@ -100,6 +105,7 @@ this.gameOver();
         }, 1000);
     }
 
+/*------overlay screens for victory or game over-------*/
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
@@ -111,6 +117,7 @@ this.gameOver();
         document.getElementById('victory-text').classList.add('visible');
     }
 
+/*-----shuffle cards using the Fisher-Yates shuffle------*/
     shuffleCards() {
         for(let i = this.cardsArray.length -1; i > 0; i--) {
             let randomIndex = Math.floor(Math.random() * (i+1));
@@ -141,6 +148,7 @@ overlays.forEach(overlay => {
      });
   });
 }
+/*-------makes sure to run only when html is loaded--------*/
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -149,9 +157,3 @@ if (document.readyState == 'loading') {
 
 let audioController = new AudioController();
 
-function footySound() {
-  var footyWhistle = new Audio();
-  footyWhistle.src = "sounds/whistle.mp3";
-  document.getElementById(footyWhistle);
-  footyWhistle.Play();
-}
