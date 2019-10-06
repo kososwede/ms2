@@ -112,3 +112,6 @@ I received inspiration for this project from
 * CSS-tricks.com https://css-tricks.com/
 * stackoverflow.com https://stackoverflow.com/
 * Various videos on youtube https://youtube.com
+* Web Dev Simplified
+* FreeCodeCamp.org
+* Code Sketch
