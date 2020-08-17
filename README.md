@@ -1,6 +1,14 @@
 # **MS2**
 This is my second milestone project, I have created a memory game that you as a player must turn the cards and try and find the matching pairs before the time runs out.
 
+## DEPLOYMENT
+***
+I deployed my website and files using GIT and GITHUB hosting.
+GIT is used to push files up to GITHUB where i can store the code for you to see.
+If you want to see the source code you click on the file name ie. index.html or style.css.
+
+Link to my website:  https://kososwede.github.io/ms2/
+
 ## HOW TO PLAY
 You start by choosing which category you would like the cards to display.
 You then are presented with a screen that you must click or press whenever you are ready to begin to start
@@ -76,14 +84,6 @@ My HTML5 CSS3 and my JAVASCRIPT code have all been checked in:
 * https://validator.w3.org to check HTML5 and returned with no errors.
 * https://jigsaw.w3.org to check CSS3 and returned with no errors.
 * https://jshint.com to check JAVASCRIPT and returned no errors.
-
-## DEPLOYMENT
-***
-I deployed my website and files using GIT and GITHUB hosting.
-GIT is used to push files up to GITHUB where i can store the code for you to see.
-If you want to see the source code you click on the file name ie. index.html or style.css.
-
-Link to my website:  https://kososwede.github.io/ms2/
 
 ## CREDITS
 ***
